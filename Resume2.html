@@ -2,102 +2,191 @@
 
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-9">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Resume2.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Yellowtail" rel="stylesheet">
 
-    <link rel="stylesheet" href="Resume2.js"/>
-    <script src="C:\repo\test\resume_website\jquery-ui-1.11.4.custom"></script>
-    <script src="jquery-ui.min.js"></script>
+      <script
+          src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+              </script>
 
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Yellowtail" rel="stylesheet">
+      <link rel="stylesheet" href="Resume2.css"/>
+      <link rel="stylesheet" href="Resume2.jquery"/>
 
-    <title>resumeonawebsite</title>
+      <link rel="stylesheet" href="jquery-ui.css">
+      <script src="jquery.js"></script>
+      <script src="jquery-ui.js"></script>
 
+      <!-- <link rel="stylesheet" href="jquery-ui.css">
+            <script src="jquery.js"></script>
+            <script src="jquery-ui.js"></script> -->
+            <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+          <script>
+          $(document).ready(function(){
+              $("h1").draggable(); //selects h1 tags <gg>" element
+              $("button").click(function(){
+
+        $("#quote").fadeOut(3000);
+        $("#quote").fadeIn("slow");
+
+    });
+
+        $(".slide-up").click(function(){
+            $(".box").slideUp();
+
+        });
+        $(".slide-down").click(function(){
+            $(".box").slideDown();
+
+        });
+              });
+
+          </script>
+
+    <title> GG RESUME </title>
+
+    <script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("main").style.backgroundColor = "rgba(0,0,0,0.5)";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("main").style.backgroundColor = "white";
+      }
+    </script>
 </head>
-
 <body>
-<div class=page-container>
-<div class="left col-4 col-m-4">
-  <div id="face-photo"><div id="name">Georgena Frazier</div></div>
-  <div class="side-nav">
-    <div id="info">
-    <ul>
-      <li>Aspiring Web Developer</li>
-      <li>Seattle, Washington</li>
-      <li>georgena.nicole.frazier@gmail.com</li>
-      <li>360.281.6522</li>
-      <li> <a href="https://github.com/GeorgenaNicoleFrazier/GeorgenaNicoleFrazier.github.io"> <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png" /> "GG-Codes (GitHub)" </a> </li>
-      <li> <a href="https://www.linkedin.com/in/georgenafrazier/"> <img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-social-media/256/Linkedin-icon.png" /> /in/georgenafrazier </a></li>
-    </ul>
-    </div>
+
+<!--The side navigation HTML-->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#info">Contact</a>
+    <a href="#HTML">Skills</a>
+    <a href="#exp">Experience</a>
+    <a href="#edu">Education</a>
   </div>
 
-  <h3 id="HTML">Skills</h3>
-
-  <div class="skills">
-    <p>HTML</p>
-      <div class="skills-div base">
-      <div class="skills-div percent" style="width: 80%">80%</div>
+<div id="main">
+  <!--The open button for the side navigation HTML-->
+  <div id="icon" onclick="openNav()">
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
-</div>
-  <div class="skills">
-    <p>CSS</p>
-      <div class="skills-div base">
-      <div class="skills-div percent" style="width: 75%">75%</div>
+
+<div class=jumbotron>
+  <div class="nametag">
+    <h1>< gg ></h1><br><br>
   </div>
+  <div id="face-box"><div id="name">Georgena Frazier</div></div>
 </div>
-  <div class="skills" id="JS">
-    <p>JS</p>
-      <div class="skills-div base">
-      <div class="skills-div percent" style="width: 50%">50%</div>
-  </div>
-  <div id="sanityBorder"> </div>
+
+<div id="info">
+<ul>
+  <li>Aspiring Web Developer</li>
+  <li>Seattle, Washington</li>
+  <li>georgena.nicole.frazier@gmail.com</li>
+  <li>360.281.6522</li>
+  <li> <a href="https://github.com/GeorgenaNicoleFrazier/GeorgenaNicoleFrazier.github.io"> <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png" /> "GG-Codes (GitHub)" </a> </li>
+  <li> <a href="https://www.linkedin.com/in/georgenafrazier/"> <img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-social-media/256/Linkedin-icon.png" /> /in/georgenafrazier </a></li>
+</ul>
+</div>
+</div>
+
+<div id="transition"> </div>
+
+<h3 id="HTML">SKILLS</h3>
+<div class="skills">
+  <p>HTML</p>
+    <div class="skills-div base">
+    <div class="skills-div percent" style="width: 80%">80%</div>
+</div>
+</div>
+<div class="skills">
+  <p>CSS</p>
+    <div class="skills-div base">
+    <div class="skills-div percent" style="width: 75%">75%</div>
+</div>
+</div>
+<div class="skills" id="JS">
+  <p>JS</p>
+    <div class="skills-div base">
+    <div class="skills-div percent" style="width: 50%">50%</div>
+</div>
+</div>
+
+<div id="trans2"> </div>
+
+<div class="right">
+<div id="exp">
+<h3><u>EXPERIENCE</u></h3>
+             <div>
+                <ul>
+                    <li class="company">NORDSTROM<span>2017 - Present</span></li>
+                    <li class="position"><em>Talent & Culture</em></li>
+                    <li class="descript">Recruiting, coordinating interviews, and assisting in the on-boarding process with candidates.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                  <li class="company">BitTitan<span>2016 - 2017</span></li>
+                    <li class="position"><em>Recruiting Coordinator</em></li>
+                    <li class="descript">Coordinated phone, technical, and on-site interviews. Assisted with training and on-boarding of new
+                        employees. Tracked and reported all expenses incurred by the Recruiting and HR department.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                  <li class="company">CARA<span>2012 - 2005</span></li>
+                    <li class="position"><em>Program Manager</em></li>
+                      <li class="descript">Raised over $90,000 through the execution of annual charity auctions and programming. Assisted the
+                        grant application process through research and documentation of program effectiveness.
+                    </li>
+                </ul>
+            </div>
+          </div>
+
+            <div id="edu">
+                <h3><u>EDUCATION</u></h3>
+                <div>
+                  <ul>
+                  <li class="company">University of Washington<span>2016 - 2017</span></li>
+                      <li class="position"><em>BA Psychology<em></li>
+                </ul>
+            </div>
+          <div>
+            <ul>
+              <li class="company"><img id="floodgate" src="http://floodgateacademy.com/images/color-logo.png" height="20px"/>Floodgate Academy-Seattle<span>2016 - 2017</span></li>
+               <li class="position"><em>Full Stack Software Developer Bootcamp<em></li>
+                  <!-- Link to floodgate website  <li><a href="http://floodgateacademy.com/" -->
+
+                  <button type="button" class="slide-up">Slide Up</button>
+                  <button type="button" class="slide-down">Slide Down</button>
+                  <div class="box">
+                    <div class="box-inner">
+                 <img id="quote" src="https://s-media-cache-ak0.pinimg.com/736x/81/98/f1/8198f1130003dc77bc1dd6d7368e60dc.jpg"</li>
+                
+            </ul>
+          </div>
+              </div>
+        </div>
+      </div>
+
+<div class="footer">
+  <div class="nametag"> <h1>< / gg ></h1> </div>
 </div>
 </div>
 
- <div class="right col-10 col-m-8">
-   <h3>EXPERIENCE</h3>
-<div>
-  <ul>
-     <li id="degree">NORDSTROM <p>2017 - Present</p></li>
-     <li id="univ"><em>Talent & Culture</em></li>
-       <li>Recruiting, coordinating interviews, and assisting in the on-boarding process with the candidates.</li>
-         </ul>
-</div>
-
-<div>
- <ul>
-     <li id="degree">BITTITAN<p>2016 - 2017</p></li>
-       <li id="univ"><em>Recruiting Coordinator</em></li>
-         <li>Coordinated phone, technical, and on-site interviews. Assisted with training and on-boarding of new employees. Tracked and reported all expenses incurred by the Recruiting and HR department.</li>
-             </ul>
-</div>
-
-<div>
-  <ul>
-    <li id="degree">CARA<p>2005 - 2012</p></li>
-     <li id="univ"><em>Program Manager</em></li>
-       <li>Raised over $90,000 through the execution of annual charity auctions and programming. Assisted the grant application process through research and documentation of program effectiveness.</li>
-         </ul>
-</div>
-
-<div>
-  <h3>EDUCATION</h3>
-    <ul>
-     <li id="degree">University of Washington<p>2016 - 2017</p></li>
-      <li id="univ"><em>BA Psychology</em></li>
-        </ul>
-</div>
-
-<div>
-  <ul>
-    <li id="degree">Floodgate Academy-Seattle<p>2016 - 2017</p></li>
-      <li id="univ"><em>Full Stack Software Developer Bootcamp<em></li>
-          <li><img id="floodgate" src="http://floodgateacademy.com/images/color-logo.png" /></li>
-  </ul>
-    </div>
-
-
-  </body>
-    </html>
+</body>
+</html>
